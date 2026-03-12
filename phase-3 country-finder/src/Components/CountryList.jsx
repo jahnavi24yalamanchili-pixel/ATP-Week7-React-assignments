@@ -4,7 +4,7 @@ import CountryCard from './CountryCard'
 
 function CountryList({ countries}) { //from get data function we have data array which is filld with all countries
   return (
-    <div className='flex justify-around'>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       {countries.map((country, index) => (
         <CountryCard key={index} country={country} />
       ))}

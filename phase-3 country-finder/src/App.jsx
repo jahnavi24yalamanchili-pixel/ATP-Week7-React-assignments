@@ -39,9 +39,14 @@ let [data,setCountryData]=useState([]);
     
 
   return (
-    <div className='flex'>
+   <div className="min-h-screen flex flex-col items-center p-6 bg-gray-100">
+
+  <h1 className="text-3xl font-bold mb-6">
+    Country Finder
+  </h1>
+        <SearchBar onSearch={onSearch}/>
       <CountryList countries={data}/>
-      <SearchBar onSearch={onSearch}/>
+     
     </div>
   )
 }

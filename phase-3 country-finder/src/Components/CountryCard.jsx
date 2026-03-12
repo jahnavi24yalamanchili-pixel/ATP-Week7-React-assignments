@@ -2,9 +2,9 @@ import React from "react";
 
 function CountryCard({ country }) {
   return (
-    <div style={{ border: "1px solid gray", padding: "10px", margin: "10px", width: "200px" }}>
+    <div className="border rounded shadow p-3 bg-white">
       
-      <img
+      <img className="w-full h-32 object-cover mb-2"
         src={country.flags.png}
         alt={country.name.common}
         width="100%"
